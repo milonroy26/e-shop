@@ -1,6 +1,6 @@
-export default async function removeCart(productID) {
+export default async function RemoveCart(productId) {
   const res = await fetch(
-    `https://cart-api.teamrabbil.com/api/remove-cart/${productID}`,
+    `https://cart-api.teamrabbil.com/api/remove-cart/${productId}`,
     {
       method: "GET",
       headers: {
@@ -9,5 +9,6 @@ export default async function removeCart(productID) {
     }
   );
   const data = await res.json();
+
   return data;
 }

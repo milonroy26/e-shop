@@ -6,5 +6,5 @@ export default async function fetchCartList() {
     },
   });
   const data = await res.json();
-  return data.data;
+  return data;
 }
